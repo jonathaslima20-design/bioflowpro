@@ -2144,6 +2144,9 @@ video {
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
 }
+.text-black\/40 {
+  color: rgb(0 0 0 / 0.4);
+}
 .underline {
   text-decoration-line: underline;
 }
