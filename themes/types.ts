@@ -13,6 +13,7 @@ export type BioProfile = {
   text_color: string;
   border_width: number;
   shadow_offset: number;
+  avatar_size: number;
   is_pro: boolean;
 };
 

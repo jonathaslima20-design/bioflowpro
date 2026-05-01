@@ -135,6 +135,21 @@ export default function CustomizePage() {
           </div>
         </Section>
 
+        <Section title="Tamanho do avatar">
+          <div className="flex items-center gap-4">
+            <input
+              type="range"
+              min={48}
+              max={160}
+              step={2}
+              value={profile.avatar_size ?? 90}
+              onChange={(e) => update({ avatar_size: Number(e.target.value) })}
+              className="flex-1 accent-black"
+            />
+            <span className="font-bold text-sm w-14 text-right">{profile.avatar_size ?? 90}px</span>
+          </div>
+        </Section>
+
         <Section title="Intensidade da sombra">
           <div className="flex gap-3">
             {[0, 2, 4, 6, 8].map(w => (

@@ -1967,6 +1967,9 @@ video {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .align-middle {
   vertical-align: middle;
 }
@@ -2156,6 +2159,9 @@ video {
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.accent-black {
+  accent-color: #000;
 }
 .opacity-0 {
   opacity: 0;

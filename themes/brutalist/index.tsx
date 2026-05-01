@@ -16,7 +16,10 @@ export function BrutalistTheme({ profile, links, socials, videos, banners, track
     <div className="min-h-screen py-10 px-4" style={{ backgroundColor: profile.bg_color || '#FFFFFF' }}>
       <div className="max-w-md mx-auto">
         <div className="flex flex-col items-center text-center">
-          <div className="w-20 h-20 shrink-0 aspect-square rounded-full brutal-border bg-bioyellow overflow-hidden brutal-shadow">
+          <div
+            className="shrink-0 aspect-square rounded-full brutal-border bg-bioyellow overflow-hidden brutal-shadow"
+            style={{ width: profile.avatar_size ?? 90, height: profile.avatar_size ?? 90 }}
+          >
             {profile.avatar_url && <img src={profile.avatar_url} alt="" className="w-full h-full object-cover" />}
           </div>
           <h1 className="font-display text-3xl mt-4" style={{ color: profile.text_color }}>

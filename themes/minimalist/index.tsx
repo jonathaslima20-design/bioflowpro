@@ -26,8 +26,8 @@ export function MinimalistTheme({ profile, links, socials, videos, banners, trac
       <div className="relative max-w-md mx-auto">
         <div className="flex flex-col items-center text-center">
           <div
-            className="w-28 h-28 shrink-0 aspect-square rounded-full overflow-hidden soft-shadow"
-            style={{ border: '4px solid #FFFFFF' }}
+            className="shrink-0 aspect-square rounded-full overflow-hidden soft-shadow"
+            style={{ border: '4px solid #FFFFFF', width: profile.avatar_size ?? 90, height: profile.avatar_size ?? 90 }}
           >
             {profile.avatar_url ? (
               <img src={profile.avatar_url} alt="" className="w-full h-full object-cover" />

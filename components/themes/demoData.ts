@@ -13,6 +13,7 @@ export const DEMO_PROFILE: BioProfile = {
   text_color: '#000000',
   border_width: 3,
   shadow_offset: 4,
+  avatar_size: 90,
   is_pro: false,
 };
 
