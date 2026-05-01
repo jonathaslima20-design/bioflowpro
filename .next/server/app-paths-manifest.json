@@ -3,6 +3,5 @@
   "/login/page": "app/login/page.js",
   "/[username]/page": "app/[username]/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/settings/page": "app/dashboard/settings/page.js",
   "/dashboard/customize/page": "app/dashboard/customize/page.js"
 }
