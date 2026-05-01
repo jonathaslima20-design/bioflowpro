@@ -12,7 +12,7 @@ export function MinimalistTheme({ profile, links, socials, videos, banners, trac
 
   return (
     <div
-      className="min-h-screen py-14 px-5 font-sans-light relative overflow-hidden"
+      className="min-h-screen pt-20 pb-14 px-5 font-sans-light relative overflow-hidden"
       style={{ backgroundColor: '#FDFCF8' }}
     >
       <div

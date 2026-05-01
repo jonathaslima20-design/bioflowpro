@@ -13,7 +13,7 @@ export function BrutalistTheme({ profile, links, socials, videos, banners, track
   const t = (a: string, b: string | null) => track?.(a, b);
 
   return (
-    <div className="min-h-screen py-10 px-4" style={{ backgroundColor: profile.bg_color || '#FFFFFF' }}>
+    <div className="min-h-screen pt-20 pb-10 px-4" style={{ backgroundColor: profile.bg_color || '#FFFFFF' }}>
       <div className="max-w-md mx-auto">
         <div className="flex flex-col items-center text-center">
           <div
