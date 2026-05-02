@@ -1,7 +1,7 @@
 'use client';
 
 import { memo, type ReactNode } from 'react';
-import { getTheme } from '@/themes/registry';
+import { getTheme, getThemeDefaults } from '@/themes/registry';
 import { DEMO_PROFILE, DEMO_LINKS, DEMO_SOCIALS, DEMO_VIDEOS, DEMO_BANNERS } from './demoData';
 import type { BioProfile } from '@/themes/types';
 
@@ -38,7 +38,15 @@ function PhoneFrame({ children, overlay }: { children: ReactNode; overlay?: Reac
 function ThemeMockupBase({ themeKey, overrides, overlay }: Props) {
   const theme = getTheme(themeKey);
   const Component = theme.component;
-  const profile: BioProfile = { ...DEMO_PROFILE, ...overrides, theme: themeKey };
+  const defaults = getThemeDefaults(themeKey);
+  const profile = {
+    border_width: 2,
+    shadow_offset: 4,
+    ...DEMO_PROFILE,
+    ...defaults,
+    ...overrides,
+    theme: themeKey,
+  } as BioProfile;
 
   return (
     <PhoneFrame overlay={overlay}>

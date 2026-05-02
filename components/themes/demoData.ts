@@ -1,6 +1,6 @@
 import type { BioProfile } from '@/themes/types';
 
-export const DEMO_PROFILE: BioProfile = {
+export const DEMO_PROFILE: Partial<BioProfile> = {
   id: 'demo',
   username: 'maria.cria',
   display_name: '@maria.cria',
@@ -8,11 +8,6 @@ export const DEMO_PROFILE: BioProfile = {
   avatar_url: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=256',
   theme: 'brutalist',
   theme_settings: {},
-  bg_color: '#FFFFFF',
-  button_color: '#FACC15',
-  text_color: '#000000',
-  border_width: 3,
-  shadow_offset: 4,
   avatar_size: 90,
   is_pro: false,
 };
